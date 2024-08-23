@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "untitled25",
+  "version": "${version}",
+
+  "name": "untitled25",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/untitled25/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": ["com.mohistmc.untitled25.client.Untitled25Client"],
+    "main": ["com.mohistmc.untitled25.Untitled25"]
+  },
+
+  "mixins": [
+    "untitled25.mixins.json"
+    ,{
+      "config": "untitled25.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
